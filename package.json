@@ -1,0 +1,16 @@
+{
+  "name": "react_app_template",
+  "version": "0.0.1",
+  "description": "react preconfigured template for a new project developing fast starting",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "impuDEV<impudev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
