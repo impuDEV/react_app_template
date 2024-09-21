@@ -1,3 +1,4 @@
 import {testFn} from "./test";
 
-testFn(5)
+console.log('start app...')
+const test = testFn(5)
