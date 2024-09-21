@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Counter.scss';
+import './Counter.module.scss';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
