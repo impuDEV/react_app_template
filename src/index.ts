@@ -1,4 +1,4 @@
 import {testFn} from "./test";
 
 console.log('start app...')
-const test = testFn(5)
+console.log(testFn(5))
