@@ -11,8 +11,9 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Navbar/>
-            <AppRouter/>
-            <button onClick={toggleTheme}>THEME</button>
+            <div className="content-page">
+                <AppRouter/>
+            </div>
         </div>
     );
 };
