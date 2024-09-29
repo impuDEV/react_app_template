@@ -6,18 +6,18 @@ import { AppRouter } from 'app/providers/router'
 import { Navbar } from 'widgets/Navbar'
 
 const App = () => {
-  const { theme } = useTheme()
+	const { theme } = useTheme()
 
-  return (
-    <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback="">
-        <Navbar />
-        <div className="content-page">
-          <AppRouter />
-        </div>
-      </Suspense>
-    </div>
-  )
+	return (
+		<div className={classNames('app', {}, [theme])}>
+			<Suspense fallback="">
+				<Navbar />
+				<div className="content-page">
+					<AppRouter />
+				</div>
+			</Suspense>
+		</div>
+	)
 }
 
 export default App

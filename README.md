@@ -1,5 +1,9 @@
-# React Complex Application (project template -> change title)
-### Шаблон для старта разработки фронтэнда комплексного WEB приложения построенного на технологиях React в соответствии методологии [Feature Sliced Design](https://feature-sliced.design/docs)
+# React Application (project template) -> change title
+### Шаблон для старта разработки простого WEB приложения
+- построен на технологиях React в соответствии методологии [Feature Sliced Design](https://feature-sliced.design/docs)
+- используется для создания простых информационных страниц (лендинг, сайт-визитка и т.д.)
+где не требуется работы с бекэндом, сложной машины состояний,
+без разветвлённой структуры страниц где сложно отслеживать влияние изменений вне среды тестирования
 
 ---
 
@@ -13,6 +17,10 @@ npm install - установка зависимостей
 - `npm start` - Запуск frontend проекта на webpack dev server
 - `npm run build:prod` - Сборка в режиме prod
 - `npm run build:dev` - Сборка в режиме dev (не минимизирован)
+- `npm run lint:ts` - Проверка ts файлов линтером
+- `npm run lint:ts:fix` - Исправление ts файлов линтером
+- `npm run lint:scss` - Проверка scss файлов style линтером
+- `npm run lint:scss:fix` - Исправление scss файлов style линтером
 
 ---
 
@@ -20,13 +28,25 @@ npm install - установка зависимостей
 
 (соответствует архитектуре - [feature sliced design](https://feature-sliced.design/docs)
 
-## Работа с переводами
+## Поддержка локализации. Работа с переводами
 
 Используется библиотека i18next. Файлы с переводами хранятся в public/locales
 
-Для удобства работы рекомендуется установить плагин среды разработки (Webstorm - `i18n support`)
+Для удобства работы рекомендуется установить плагины среды разработки (Webstorm - `i18n support`, `Easy I18n`)
 
 Документация i18next - [https://react.i18next.com/](https://react.i18next.com/)
+
+----
+
+## Линтинг
+
+Используется eslint для проверки typescript кода и stylelint для проверки файлов со стилями.
+
+#### Запуск линтеров
+- `npm run lint:ts` - Проверка ts файлов линтером
+- `npm run lint:ts:fix` - Исправление ts файлов линтером
+- `npm run lint:scss` - Проверка scss файлов style линтером
+- `npm run lint:scss:fix` - Исправление scss файлов style линтером
 
 ----
 
@@ -38,7 +58,9 @@ npm install - установка зависимостей
 - `/config/build` - Декомпозиция webpack конфигурации
 
 
-- `/tsconfig.json` - Typescript
+- `/tsconfig.json` - typescript
+- `/.eslintrc.js` - eslint
+- `/.stylelintrc.json` - stylelint
 
 ---
 ## Важные папки проекта

@@ -10,26 +10,26 @@ interface NavbarProps {
 }
 
 export const Navbar = (props: NavbarProps) => {
-  const {
-    className,
-  } = props
+	const {
+		className,
+	} = props
 
-  const { t } = useTranslation()
+	const { t } = useTranslation()
 
-  return (
-    <header className={classNames(cls.Navbar, {}, [className])}>
-      <div className={cls.switchers}>
-        <ThemeSwitcher />
-        <LangSwitcher />
-      </div>
-      <div className={cls.links}>
-        <AppLink variant={AppLinkVariant.SECONDARY} to="/" className={cls.mainLink}>
-          {t('Home')}
-        </AppLink>
-        <AppLink variant={AppLinkVariant.RED} to="/about">
-          {t('About')}
-        </AppLink>
-      </div>
-    </header>
-  )
+	return (
+		<header className={classNames(cls.Navbar, {}, [className])}>
+			<div className={cls.switchers}>
+				<ThemeSwitcher />
+				<LangSwitcher />
+			</div>
+			<div className={cls.links}>
+				<AppLink variant={AppLinkVariant.SECONDARY} to="/" className={cls.mainLink}>
+					{t('Home')}
+				</AppLink>
+				<AppLink variant={AppLinkVariant.RED} to="/about">
+					{t('About')}
+				</AppLink>
+			</div>
+		</header>
+	)
 }
