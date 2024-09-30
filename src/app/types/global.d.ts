@@ -15,3 +15,5 @@ declare module '*.svg' {
 }
 
 declare const __IS_DEV__: boolean
+declare const __PACKAGE_NAME__: string
+declare const __PACKAGE_VER__: string
