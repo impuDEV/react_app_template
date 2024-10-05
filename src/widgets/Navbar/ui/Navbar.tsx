@@ -25,7 +25,7 @@ export const Navbar = (props: NavbarProps) => {
 				) : (
 					<>
 						<ThemeSwitcher />
-						<LangSwitcher />
+						<LangSwitcher className={cls.lang} />
 					</>
 				)}
 			</div>

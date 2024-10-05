@@ -4,6 +4,8 @@ import cls from './Button.module.scss'
 
 export enum VariantButton {
 	GHOST = 'ghost',
+	GHOST_INVERTED = 'ghostInverted',
+	OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

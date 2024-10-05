@@ -17,7 +17,7 @@ export const LangSwitcher = memo(({ className }: LangSwitcherProps) => {
 	return (
 		<Button
 			className={classNames('', {}, [className])}
-			variant={VariantButton.GHOST}
+			variant={VariantButton.GHOST_INVERTED}
 			onClick={toggle}
 		>
 			{t('language')}

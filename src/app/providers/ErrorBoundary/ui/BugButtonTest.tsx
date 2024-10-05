@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Button } from '@/shared/ui/Button'
+import { Button, VariantButton } from '@/shared/ui/Button'
 
 // for test ErrorBoundary
 export const BugButton = () => {
@@ -14,5 +14,9 @@ export const BugButton = () => {
 		}
 	}, [error])
 
-	return <Button onClick={onThrow}>{t('Generate error')}</Button>
+	return (
+		<Button variant={VariantButton.OUTLINE} onClick={onThrow}>
+			{t('Generate error')}
+		</Button>
+	)
 }
