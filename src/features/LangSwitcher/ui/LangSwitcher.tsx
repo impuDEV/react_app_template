@@ -1,10 +1,10 @@
 import { memo } from 'react'
-import { classNames } from 'shared/lib/classNames/classNames'
 import { useTranslation } from 'react-i18next'
-import { Button, VariantButton } from 'shared/ui/Button/Button'
+import { classNames } from '@/shared/lib/classNames/classNames'
+import { Button, VariantButton } from '@/shared/ui/Button/Button'
 
 interface LangSwitcherProps {
-    className?: string;
+	className?: string
 }
 
 export const LangSwitcher = memo(({ className }: LangSwitcherProps) => {

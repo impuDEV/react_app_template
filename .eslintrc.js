@@ -1,12 +1,16 @@
 module.exports = {
 	env: {
 		browser: true,
-		es6: true,
+		es2021: true,
 	},
 	extends: [
+		'eslint:recommended',
 		'plugin:react/recommended',
 		'airbnb',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:react-hooks/recommended',
 		'plugin:i18next/recommended',
+		'prettier',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -20,11 +24,11 @@ module.exports = {
 		'react',
 		'@typescript-eslint',
 		'i18next',
+		'react-hooks',
+		'eslint-plugin-impudev-fsd',
+		'unused-imports',
 	],
 	rules: {
-		'react/jsx-indent': [2, 'tab'],
-		'react/jsx-indent-props': [2, 'tab'],
-		indent: [2, 'tab'],
 		'linebreak-style': ['error', 'windows'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'never'],
@@ -44,7 +48,10 @@ module.exports = {
 			},
 		],
 		'react/jsx-props-no-spreading': 'warn',
+		'unused-imports/no-unused-imports': 'error',
 		'react/display-name': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'error',
 		'react/no-array-index-key': 'off',
 		'react/no-deprecated': 'off',
 		'react/function-component-definition': 'off',
@@ -61,6 +68,14 @@ module.exports = {
 		'jsx-a11y/click-events-have-key-events': 'off',
 		'object-curly-spacing': ['error', 'always'],
 		'arrow-body-style': 'off',
+		'impudev-fsd/path-checker': ['error', { alias: '@' }],
+		'impudev-fsd/layer-imports': [
+			'error',
+			{
+				alias: '@',
+				ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+			},
+		],
 		'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
 		'react/no-unstable-nested-components': 'warn',
 		'i18next/no-literal-string': ['error', { markupOnly: true }],
