@@ -1,6 +1,6 @@
 {
 	"name": "react_app_template",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "react preconfigured template for a new project developing fast starting",
 	"main": "index.js",
 	"scripts": {
